@@ -17,12 +17,9 @@ import React, {
 import { GlobalModalContext } from "../hooks/useGlobalModalContext";
 import { ModalProps, ModalType } from "../types";
 import ModalError from "./ModalError";
-import PlaceBidModal from "./PlaceBidModal";
 import TransactionModal from "./TransactionModal";
 import WalletModal from "./WalletModal";
-import BuyNowModal from "./BuyNowModal";
 import CrowdfundGroupBuyModal from "./CrowdfundGroupBuyModal";
-import ExchangeConfirmModal from "./ExchangeConfirmModal";
 
 interface ModalState {
   props?: Omit<ModalProps, "modalType">;
@@ -33,10 +30,7 @@ interface ModalState {
 const components: Record<ModalType, React.FC<any>> = {
   [ModalType.Wallet]: WalletModal,
   [ModalType.Transaction]: TransactionModal,
-  [ModalType.PlaceBid]: PlaceBidModal,
-  [ModalType.BuyNow]: BuyNowModal,
   [ModalType.CrowdfundGroupBuy]: CrowdfundGroupBuyModal,
-  [ModalType.ExchangeConfirm]: ExchangeConfirmModal,
 };
 
 interface GlobalModalProviderProps {

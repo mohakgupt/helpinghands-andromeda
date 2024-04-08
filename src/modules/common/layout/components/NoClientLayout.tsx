@@ -1,7 +1,6 @@
 "use client";
 import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import React, { FC, ReactNode } from "react";
-import PoweredByLogo from "./PoweredByLogo";
 
 interface LayoutProps {
   children?: ReactNode;
@@ -28,7 +27,6 @@ const NoClientLayout: FC<LayoutProps> = (props) => {
       <Box px="24" py="16">
         {children}
       </Box>
-      <PoweredByLogo />
       {/* <Box>
         <Footer />
       </Box> */}

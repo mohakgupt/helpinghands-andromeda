@@ -7,9 +7,9 @@ import useAndromedaClient from "@/lib/andrjs/hooks/useAndromedaClient";
 import { useAndromedaStore } from "@/zustand/andromeda";
 import { Plus } from "lucide-react";
 
-interface ConnectWalletProps { }
+interface ConnectWalletProps {}
 const ConnectWallet: FC<ConnectWalletProps> = (props) => {
-  const { } = props;
+  const {} = props;
   const { isLoading } = useAndromedaStore();
   const client = useAndromedaClient();
   const open = useWalletModal();
@@ -19,7 +19,7 @@ const ConnectWallet: FC<ConnectWalletProps> = (props) => {
   return (
     <Button
       leftIcon={<Icon as={Plus} boxSize={5} />}
-      colorScheme="purple"
+      colorScheme="black"
       onClick={open}
       isLoading={isLoading}
     >
