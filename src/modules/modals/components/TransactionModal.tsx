@@ -2,7 +2,6 @@ import { ProgressBar } from "@/modules/common/ui";
 import { Box } from "@chakra-ui/react";
 import React, { memo, useEffect, useMemo, useState } from "react";
 import { useGlobalModalContext } from "../hooks";
-import usePlaceBidModal from "../hooks/usePlaceBidModal";
 import { TransactionModalProps } from "../types";
 import BroadcastingModal from "./BroadcastingModal";
 import EstimateFeeModal from "./EstimateFeeModal";

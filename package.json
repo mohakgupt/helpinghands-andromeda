@@ -24,6 +24,7 @@
     "@emotion/styled": "^11.11.0",
     "axios": "^1.5.1",
     "dayjs": "^1.11.6",
+    "encoding": "^0.1.13",
     "framer-motion": "^10.16.4",
     "graphql": "^16.6.0",
     "jsoncrush": "^1.1.8",
